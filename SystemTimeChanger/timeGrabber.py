@@ -7,4 +7,4 @@ def grab_time_and_date():
     date =bs.find("span",{'class':'font6'}).text.strip()
     time = bs.find("span",{'class':'font7'}).text.strip()
     return time,date
-
+sdfs
