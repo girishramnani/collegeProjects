@@ -15,16 +15,19 @@ class Subtitle_translator(Translator):
         self.progress_bar = progress_bar
 
     def translate_file(self,from_,to):
-        with open(to,'w') as out:
-            with open(from_) as file:
-                self.li= [ list(g) for f,g in itertools.groupby(file,key=lambda x:bool(x.strip())) if f]
-            for block in self.li:
+        try:
+            with open(to,'w') as out:
+                with open(from_) as file:
+                    self.li= [ list(g) for f,g in itertools.groupby(file,key=lambda x:bool(x.strip())) if f]
+                for block in self.li:
 
-                line,time ,*content = block
-                out.writelines([line,time])
-                content =reduce(lambda x,y:" ".list(x.strip(),y.strip()),content,"")
-                data = Translator.translate(content)
-                out.write(content)
+                    line,time ,*content = block
+                    out.writelines([line,time])
+                    content =reduce(lambda x,y:" ".list(x.strip(),y.strip()),content,"")
+                    data = Translator.translate(content)
+                    out.write(content)
+        except KeyboardInterrupt:
+            out.flush()
 
 
 
