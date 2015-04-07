@@ -37,5 +37,3 @@ class Translator:
         r = request.urlopen(req)
         return r.read().decode('utf-8')
 
-t2 = Translator("fr")
-print(t2._get_json5_from_google("hello"))
