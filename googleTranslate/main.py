@@ -20,6 +20,8 @@ class UI:
         self.button.grid(row=0,column=2,pady=(5,5),padx=(2))
 
 
+
+
     def show_progress_bar(self):
         self.popup = popup = Toplevel(self)
         Label(popup, text="Please while translation is being done").grid(

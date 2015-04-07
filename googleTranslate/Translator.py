@@ -15,6 +15,7 @@ class Translator:
         self.from_lang = from_lang
         self.to_lang = to_lang
 
+
     def translate(self, source):
         self.source_list = wrap(source, 1000, replace_whitespace=False)
         return ' '.join(self._get_translation_from_google(s) for s in self.source_list)
