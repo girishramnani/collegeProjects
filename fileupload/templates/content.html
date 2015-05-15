@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block content %}
+<section class="content bgcolor-4">
+				<header>
+				<h2>Give your name and Project name</h2>
+				</header>
+				<span class="input input--minoru" >
+					<input class="input__field input__field--yoko" type="text" id="input-16"  />
+					<label class="input__label input__label--yoko" for="input-16">
+						<span class="input__label-content input__label-content--yoko">Your name</span>
+					</label>
+				</span>
+                <span class="input input--minoru">
+					<input class="input__field input__field--yoko" type="text" id="input-16" />
+					<label class="input__label input__label--yoko" for="input-16">
+						<span class="input__label-content input__label-content--yoko">Project name</span>
+					</label>
+				</span>
+                <br>
+				<span class="input input--minoru" style="width: 100%">
+					<input class="input__field input__field--yoko" type="file" id="input-17" name="file" />
+					<label class="input__label input__label--yoko" for="input-17">
+						<span class="input__label-content input__label-content--yoko">Project folder (upload as a .zip file) </span>
+					</label>
+				</span>
+			</section>
+            <input type="submit" value=upload >
+
+{% endblock %}
