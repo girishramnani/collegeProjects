@@ -1,5 +1,6 @@
 from functools import reduce
 import itertools
+from tkinter import messagebox
 from googleTranslate.Translator import Translator
 import re
 
@@ -7,9 +8,8 @@ __author__ = 'Girish'
 
 class Subtitle_translator(Translator):
 
-    def __init__(self,to,file):
+    def __init__(self,to):
         Translator.__init__(self,to)
-
 
     def set_progress_bar(self,progress_bar):
         self.progress_bar = progress_bar
@@ -23,11 +23,19 @@ class Subtitle_translator(Translator):
 
                     line,time ,*content = block
                     out.writelines([line,time])
-                    content =reduce(lambda x,y:" ".list(x.strip(),y.strip()),content,"")
-                    data = Translator.translate(content)
-                    out.write(content)
+                    t2 =""
+                    for line in content:
+                        t2+=line.strip()+" "
+
+                    t2=self.translate(t2)
+                    t2+="\r\n\n"
+                    out.writelines(t2)
         except KeyboardInterrupt:
             out.flush()
+
+        # self.progress_bar.destroy()
+        messagebox.showinfo("File Done","The file has been stored at "+to)
+
 
 
 
