@@ -1,0 +1,6 @@
+[submodule "SPOJ-Scrapper"]
+	path = SPOJ-Scrapper
+	url = https://github.com/girishramnani/SPOJ-Scrapper
+[submodule "pox-load-finder"]
+	path = pox-load-finder
+	url = https://github.com/girishramnani/pox-load-finder
