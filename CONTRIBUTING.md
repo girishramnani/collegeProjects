@@ -1,6 +1,9 @@
 #Contributors
 <br>
-<ul>
+<ol>
+
 <li>Girish Ramnani</li>
 <li>Amit Sharma</li>
-</ul>
+<li>Jainam Jhaveri</li>
+
+</ol>
