@@ -5,8 +5,11 @@ The projects which are offered in our college (one of them ). this repository co
 ###The list of contributors is [here](https://github.com/WiredProgrammers/collegeProjects/blob/master/CONTRIBUTING.md).
 <br>
 <br>
-Now there is another list filled with mini-projects offered in 5^th sem
-
+This repo contains the mini-projects offered in 4th,5th and 6th semester:
++ mini-project-1.pdf (4th sem)
++ mini-project-2.xlsx (5th sem)
++ mini-project-3.pdf (6th sem)
+<br>
 <br>
 ## Rules to contribute
 
