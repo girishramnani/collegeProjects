@@ -6,9 +6,11 @@ The projects which are offered in our college (one of them ).This repository con
 <br>
 <br>
 This repo contains the mini-projects offered in 4th,5th and 6th semester:
+
 + [mini-project-1.pdf](https://github.com/WiredProgrammers/collegeProjects/raw/master/mini-poject-1.pdf) (4th sem)
 + [mini-project-2.xlsx](https://github.com/WiredProgrammers/collegeProjects/blob/master/mini-project-2.xlsx) (5th sem)
 + [mini-project-3.pdf](https://github.com/WiredProgrammers/collegeProjects/blob/master/mini-project-3.pdf) (6th sem)
+
 <br>
 <br>
 ## Rules to contribute
